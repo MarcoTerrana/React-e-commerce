@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  gap: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex section {
+  flex-grow: 1;
+}
+
+aside ul,
+ul.grid {
+  padding: 0;
+}
+
+aside ul li,
+ul.grid {
+  list-style: none;
+}
+
+ul.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+ul.grid li.loading p,
+ul.grid li.loading h4 {
+  background-color: black;
+}
+
+ul.grid li article img {
+  width: 100%;
+}
